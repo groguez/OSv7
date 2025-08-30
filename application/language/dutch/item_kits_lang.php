@@ -1,0 +1,45 @@
+<?php
+$lang['item_kits_name'] = 'Naam productsamenstelling';
+$lang['item_kits_description'] = 'Beschrijving';
+$lang['item_kits_no_item_kits_to_display'] = 'Geen productsamenstelling om te tonen';
+$lang['item_kits_update'] = 'Update productsamenstelling';
+$lang['item_kits_new'] = 'Nieuwe productsamenstelling';
+$lang['item_kits_none_selected'] = "U heeft nog geen productsamenstelling geselecteerd";
+$lang['item_kits_info'] = 'Productsamenstelling informatie';
+$lang['item_kits_successful_adding'] = 'U heeft met succes een productsamenstelling toegevoegd';
+$lang['item_kits_successful_updating'] = 'U heeft met succes een productsamenstelling bijgewerkt';
+$lang['item_kits_error_adding_updating'] = 'Fout bij het toevoegen / bijwerken productsamenstelling';
+$lang['item_kits_successful_deleted'] = 'Met succes verwijderd';
+$lang['item_kits_confirm_delete'] = 'Weet u zeker dat u de geselecteerde productsamenstelling wilt verwijderen?';
+$lang['item_kits_one_or_multiple'] = 'Productsamenstelling(en)';
+$lang['item_kits_cannot_be_deleted'] = 'Kan geen productsamenstelling(en) verwijderen';
+$lang['item_kits_add_item'] = 'Voeg product toe';
+$lang['item_kits_items'] = 'Producten';
+$lang['item_kits_item'] = 'Product';
+$lang['item_kits_quantity'] = 'Aantal';
+$lang['item_kits_desc'] = 'Productsamenstelling bestaan uit 1 of meer producten te zien als een groep. Voeg uw eerste producten toe met behulp van het onderstaande veld.';
+$lang['item_kits_items_added'] = 'Items toegevoegd';
+
+$lang['item_kits_cleanup_sucessful'] = 'Post kits werden opgeschoond';
+$lang['item_kits_cleanup_old_item_kits'] = 'Cleanup oude Item Kits';
+$lang['item_kits_confirm_cleanup'] = 'Weet je zeker dat je alle verwijderde items kits schoonmaken? (Dit zal artikelnummers van verwijderde items te verwijderen, zodat ze kunnen worden hergebruikt)';
+$lang['item_kits_tax_1_name'] = 'BTW 1 benaming';
+$lang['item_kits_tax_1_percent'] = 'BTW 1 percentage';
+$lang['item_kits_tax_2_name'] = 'BTW 2 benaming';
+$lang['item_kits_tax_2_percent'] = 'BTW 2 percentage';
+$lang['item_kits_tax_2_cummulative'] = 'BTW 2 Cumulatief';
+$lang['items_kit_unable_to_add_item'] = 'Niet in staat om toe te voegen Item aan kit';
+$lang['item_kits_item_kits_basic_information'] = 'Item Kit Informatie';
+$lang['item_kits_successful_undeleted'] = 'Sucesfully ongedaan gemaakt';
+$lang['item_kits_cannot_be_undeleted'] = 'Kan niet herstellen';
+$lang['item_kits_manage_deleted'] = 'Beheer verwijderde item kits';
+$lang['item_kits_confirm_undelete'] = 'Weet u zeker dat u de geselecteerde item kits wilt herstellen?';
+$lang['item_kits_prev_item_kit'] = 'Vorige item Kit';
+$lang['item_kits_next_item_kit'] = 'Volgende item kit';
+$lang['item_kits_confirm_add_to_sale'] = 'Weet je zeker dat je de geselecteerde itemkits aan de uitverkoop wilt toevoegen?';
+$lang['item_kits_cannot_add_to_sale'] = 'Kan geselecteerde itemkits niet toevoegen aan de uitverkoop.';
+$lang['items_successfully_added_to_sale'] = 'De geselecteerde itemkits zijn succesvol toegevoegd aan de verkoop.';
+$lang['item_kits_confirm_add_to_receiving'] = 'Weet u zeker dat u de geselecteerde itemkits aan de ontvangst wilt toevoegen?';
+$lang['item_kits_cannot_add_to_receiving'] = 'Kan geselecteerde itemkits niet toevoegen aan de ontvangende set.';
+$lang['items_successfully_added_to_receiving'] = 'De geselecteerde itemkits zijn succesvol toegevoegd aan de ontvangst.';
+?>
