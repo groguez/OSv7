@@ -1,23 +1,31 @@
- @import 'variables.less';
+ @import 'design-system.less';
 
-@left-bar-bg    :#373942;
+/**
+ * Tema Oscuro - PHP Point of Sale
+ * Usa variables del sistema de diseño para consistencia
+ */
 
-@Dashboard : @primary-color;
-@Customers : #6fd64b;
-@Items : #fb5d5d;
-@Price_Rules : #9244CC;
-@Item_Kits : #f7941d;
-@Suppliers : @primary-color;
-@Reports : #f7941d;
-@Recievings : #fb5d5d;
-@Sales : #6fd64b;
-@Deliveries : #9244CC;
-@Expenses : @primary-color;
-@Employees: #6fd64b;
-@Gift_Cards : #fb5d5d;
-@Config : #f7941d;
-@Locations : #9244CC;
-@Messages : @primary-color;
+/* Colores base para modo oscuro */
+@left-bar-bg: @dark-surface;
+@dark-page-bg: #1a1c20;
+
+/* Alias de colores de módulo para tema oscuro */
+@Dashboard: @nav-home;
+@Customers: @nav-customers;
+@Items: @nav-items;
+@Price_Rules: @nav-price-rules;
+@Item_Kits: @nav-item-kits;
+@Suppliers: @nav-suppliers;
+@Reports: @nav-reports;
+@Recievings: @nav-receivings;
+@Sales: @success;
+@Deliveries: @info;
+@Expenses: @primary-color;
+@Employees: @success;
+@Gift_Cards: @danger;
+@Config: @warning;
+@Locations: @info;
+@Messages: @primary-color;
 @Timeclocks : @primary-color;
 
 @Default: @primary-color;

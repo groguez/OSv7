@@ -1,0 +1,151 @@
+/**
+ * PHP Point of Sale - Sistema de Diseño Unificado
+ * 
+ * Este archivo consolida todas las variables de diseño del sistema
+ * para garantizar coherencia visual en todos los módulos.
+ * 
+ * Uso: Importar este archivo en todos los archivos LESS/CSS
+ * @import "variables.less";
+ */
+
+/************ Tipografía del Sistema ********************/
+@main-font: 'Helvetica Neue', 'Nunito', sans-serif;
+@heading-font: 'ProximaNova-Light', sans-serif;
+@content-font: 'ProximaNova-Regular', sans-serif;
+@content-font-bold: 'ProximaNova-Semibold', sans-serif;
+@receipt-font: 'Arial';
+
+/*********************** Colores de Marca *****************************/
+
+/* Color Primario - Azul Corporativo PHP POS */
+@primary-color: #489ee7;
+@primary-dark: #3a7bc8;
+@primary-light: #7fb3e8;
+@primary-bg: rgba(72, 158, 231, 0.1);
+
+/* Colores Semánticos */
+@success: #6fd64b;        /* Verde - Ventas, confirmaciones */
+@success-dark: #5ab839;
+@success-light: #a8e592;
+@success-bg: rgba(111, 214, 75, 0.1);
+
+@danger: #fb5d5d;         /* Rojo - Recepciones, errores */
+@danger-dark: #d94545;
+@danger-light: #fca1a1;
+@danger-bg: rgba(251, 93, 93, 0.1);
+
+@warning: #f7941d;        /* Naranja - Reportes, alertas */
+@warning-dark: #d67c12;
+@warning-light: #fbb96f;
+@warning-bg: rgba(247, 148, 29, 0.1);
+
+@info: #9244CC;           /* Púrpura - Reglas de precios */
+@info-dark: #7a35ad;
+@info-light: #b97dd9;
+@info-bg: rgba(146, 68, 204, 0.1);
+
+/* Colores por Módulo de Navegación */
+@nav-home: @primary-color;
+@nav-customers: @success;
+@nav-items: @danger;
+@nav-price-rules: @info;
+@nav-item-kits: @warning;
+@nav-suppliers: @primary-color;
+@nav-reports: @warning;
+@nav-receivings: @danger;
+
+/* Alias de colores para compatibilidad */
+@flatBlue: @primary-color;
+@flatGreen: @success;
+@flatRed: @danger;
+@flatOrange: @warning;
+@primary: @primary-color;
+
+/*********************** Colores Neutros *****************************/
+
+/* Fondos */
+@left-bar-bg: #FFFFFF;
+@top-bar-bg: #FFFFFF;
+@content-bg: #F9FBFC;
+@input-bg: #f2f4f7;
+@page-bg: #e9ebee;
+@light-bg: #f9fbfc;
+@alternative-bg: #f8f8f8;
+
+/* Bordes */
+@light-border: #e9ecf2;
+@dark-border: #d7dce5;
+@border-color: #d5d5d5;
+@border-light: #e9ecf2;
+
+/* Textos */
+@content-color: #000;
+@heading-color: #555555;
+@text-muted: #aaaaaa;
+@light-color: #aaaaaa;
+@icon-color: #0c2d61;
+
+/* Modo Oscuro */
+@dark-bg: #202126;
+@dark-surface: #373942;
+@dark-text: #969AA7;
+@dark-border: #4a4c53;
+@footer-bg: #3f464f;
+
+/*********************** Dimensiones y Espaciado *****************************/
+
+/* Barra Lateral */
+@leftbar-width: 205px;
+@minibar-width: 90px;
+@mediumbar-width: 180px;
+
+/* Barra Superior */
+@topbar-height: 60px;
+@logo-height: @topbar-height;
+
+/* Contenido */
+@content-padding: 10px;
+@sidebar-padding: 20px;
+
+/* Navegación */
+@navlist-height: 40px;
+
+/* Iconos */
+@icon-padding: 20px;
+@icon-size: 18px;
+
+/* Bordes Redondeados */
+@border-radius: 3px;
+@border-radius-lg: 6px;
+
+/*********************** Tipografía *****************************/
+
+@sidebar-fontsize: 14px;
+@sidebar-fontweight: 300;
+
+/*********************** Sombras y Efectos *****************************/
+
+@shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.05);
+@shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.08);
+@shadow-lg: 0px 6px 12px rgba(0, 0, 0, 0.12);
+
+@transition-fast: all 0.15s ease-out;
+@transition-normal: all 0.2s ease-out;
+@transition-slow: all 0.3s ease-out;
+
+/*********************** Estados de Componentes *****************************/
+
+@active-bg: @primary-bg;
+@hover-bg: rgba(72, 158, 231, 0.05);
+@selected-bg: @primary-color;
+@selected-text: #FFFFFF;
+
+/*********************** Z-Index Layers *****************************/
+
+@z-dropdown: 1000;
+@z-sticky: 1020;
+@z-fixed: 1030;
+@z-modal-backdrop: 1040;
+@z-modal: 1050;
+@z-popover: 1060;
+@z-tooltip: 1070;
