@@ -24,6 +24,11 @@ class Home extends Secure_area
 		$this->load->helper('cloud');
 		$this->load->helper('text');
 		$this->load->model('Appfile');
+		
+		// Cargar modelos para dashboard avanzado
+		$this->load->model('CashFlow/CashFlow_model');
+		$this->load->model('StrategicPlanning/Strategic_planning_model');
+		$this->load->model('Subscription/Subscription_model');
 	}
 
 	function customer_modal($customer_id)
