@@ -81,10 +81,10 @@ class Home extends Secure_area
 			$data['month_sale'] = $this->sales_widget();
 		}
 		$this->load->helper('demo');
-		$data['can_show_mercury_activate'] = (!is_on_demo_host() && !$this->config->item('mercury_activate_seen')) && !$this->Location->get_info_for_key('enable_credit_card_processing') && $this->config->item('branding_code') == 'phppointofsale';		
+		$data['can_show_mercury_activate'] = (!is_on_demo_host() && !$this->config->item('mercury_activate_seen')) && !$this->Location->get_info_for_key('enable_credit_card_processing') && $this->config->item('branding_code') == 'onebox';		
 		$data['can_show_setup_wizard'] = !$this->config->item('shown_setup_wizard');
-		$data['can_show_feedback_promotion'] = !$this->config->item('shown_feedback_message')  && $this->config->item('branding_code') == 'phppointofsale';		
-		$data['can_show_reseller_promotion'] = !$this->config->item('reseller_activate_seen')  && $this->config->item('branding_code') == 'phppointofsale';
+		$data['can_show_feedback_promotion'] = !$this->config->item('shown_feedback_message')  && $this->config->item('branding_code') == 'onebox';		
+		$data['can_show_reseller_promotion'] = !$this->config->item('reseller_activate_seen')  && $this->config->item('branding_code') == 'onebox';
 		if (is_on_phppos_host())
 		{
 			$this->lang->load('login');

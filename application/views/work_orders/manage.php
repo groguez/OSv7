@@ -658,7 +658,7 @@
 
 	<?php
 		$vendor_list = array();
-		if($this->config->item('branding')['code'] == 'phppointofsale'){
+		if($this->config->item('branding')['code'] == 'onebox'){
 			if($this->config->item('ig_api_bearer_token') && $this->config->item('enable_ig_integration')){
 				array_push($vendor_list, 'ig_api_bearer_token');
 			}

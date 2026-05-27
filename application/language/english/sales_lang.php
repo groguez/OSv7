@@ -401,11 +401,11 @@ $lang['sales_credit_card_terminal_online'] = 'Your credit card terminal is ONLIN
 $lang['sales_exp_date'] = 'Expiration Date';
 
 $lang['sales_already_open_error'] = 'Sale is open on Register %s by %s';
-$lang['sales_coreclear_portal'] = 'PHP POS Payments Portal';
+$lang['sales_coreclear_portal'] = 'OneBox Payments Portal';
 
 $lang['sales_drawer_popped'] = 'Drawer popped';
 
-$lang['sales_unable_to_determine_transaction_status_please_check_coreclear'] = 'Unable to determine transaction status. Please check PHP POS Payments Premium transaction list';
+$lang['sales_unable_to_determine_transaction_status_please_check_coreclear'] = 'Unable to determine transaction status. Please check OneBox Payments Premium transaction list';
 $lang['sales_terminal_connection_failed_please_try_again'] = 'Terminal connection failed. Please try transaction again';
 $lang['sales_no_result_found'] = 'No results found.';
 $lang['sales_ask_search_in_ig_catalog'] = 'Do you want to continue search in Injured Gadgets catalog?';

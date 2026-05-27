@@ -42,7 +42,7 @@ class Shopify extends Ecom
 					get_config_key_shared('shopify_public'),
 					get_config_key_shared('shopify_private'),
 					'read_products,write_products,read_customers,write_customers,read_orders,write_orders,read_inventory,write_inventory,read_locations',
-					'phppointofsale.com',
+					'onebox.mx',
 					new FileSessionStorage(sys_get_temp_dir()),
 					'2025-01',false,false
 				);

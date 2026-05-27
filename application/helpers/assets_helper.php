@@ -10,8 +10,8 @@ function get_css_files()
 	}
 	else
 	{
-		$branding = 'phppointofsale';
-		$code = 'phppointofsale';
+		$branding = 'onebox';
+		$code = 'onebox';
 	}
 
 	$return = array();

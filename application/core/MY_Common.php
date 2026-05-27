@@ -46,7 +46,7 @@ function is_on_phppos_host()
 		return $_SERVER['CI_PHPPOS_HOST'];
 	}
 	
-	return isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'],'phppointofsale.com') !== FALSE || strpos($_SERVER['HTTP_HOST'],'phppos.com') !== FALSE || strpos($_SERVER['HTTP_HOST'],'phppointofsale.lk') !== FALSE || strpos($_SERVER['HTTP_HOST'],'phppointofsalestaging.com') !== FALSE);
+	return isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'],'onebox.mx') !== FALSE || strpos($_SERVER['HTTP_HOST'],'onebox.com') !== FALSE || strpos($_SERVER['HTTP_HOST'],'onebox.lk') !== FALSE || strpos($_SERVER['HTTP_HOST'],'oneboxstaging.mx') !== FALSE);
 }
 
 function get_real_ip_address()

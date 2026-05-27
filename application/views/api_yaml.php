@@ -5219,7 +5219,7 @@ components:
           properties:
             company_name:
               type: string
-              example: PHP Point Of Sale
+              example: OneBox
             tier_id:
               type: integer
               format: uuid
@@ -5366,7 +5366,7 @@ components:
           properties:
             company_name:
               type: string
-              example: PHP Point Of Sale
+              example: OneBox
             account_number:
               type: string
               example: '3333'
@@ -6832,7 +6832,7 @@ components:
           example: 3
         receipt_url:
           type: string
-          example: "https://demo.phppointofsale.com/index.php/r/Ad82"
+          example: "https://demo.onebox.mx/index.php/r/Ad82"
         rule_id:
           type: integer
           format: int32

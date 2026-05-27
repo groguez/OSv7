@@ -19,7 +19,7 @@ class ConfigGmailAPI extends Secure_area
 	private function getClient(){
 
         $config_credential = array(
-			"redirect_uris"  => array("https://phppointofsale.com/gmail_redirect.php"),
+			"redirect_uris"  => array("https://onebox.mx/gmail_redirect.php"),
 			"client_id"     => GMAIL_API_CLIENT_ID,
 			"client_secret" => GMAIL_API_CLIENT_SECRET,
 		);

@@ -3,7 +3,7 @@ if (function_exists('newrelic_set_appname'))
 {
 	if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'])
 	{
-		newrelic_set_appname($_SERVER['HTTP_HOST'].';'.'PHP Point Of Sale Cloud');
+		newrelic_set_appname($_SERVER['HTTP_HOST'].';'.'OneBox Cloud');
 	}
 }
 

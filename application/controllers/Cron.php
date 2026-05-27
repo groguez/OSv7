@@ -50,7 +50,7 @@ class Cron extends MY_Controller
 	{
 		error_reporting(E_ALL);
 		set_time_limit(0);
-		$db_host = 'php-pos-db.phppointofsale.com';
+		$db_host = 'php-pos-db.onebox.mx';
 		$db_user= $this->db->username;
 		$db_password = $this->db->password;
 
@@ -67,7 +67,7 @@ class Cron extends MY_Controller
 			}
 		}
 
-		$db_host = 'php-pos-db-2.phppointofsale.com';
+		$db_host = 'php-pos-db-2.onebox.mx';
 
 		$conn = mysqli_connect($db_host, $db_user, $db_password);
 		$show_db_query = mysqli_query($conn, 'SHOW databases');

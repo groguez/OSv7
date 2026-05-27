@@ -540,7 +540,7 @@ class Appointment extends MY_Model
 				$this->email->initialize($config);
 				$company = ($company = $this->Location->get_info_for_key('company', $appointments_request["location_id"])) ? $company : $this->config->item('company');
 				$this->email->subject(lang('appointments_one_or_multiple') .", ".$company.", ".date(get_date_format().' '.get_time_format(), strtotime($appointments_request["start_time"])));
-				$this->email->from($this->Location->get_info_for_key('email') ? $this->Location->get_info_for_key('email') : 'no-reply@mg.phppointofsale.com', $this->config->item('company'));
+				$this->email->from($this->Location->get_info_for_key('email') ? $this->Location->get_info_for_key('email') : 'no-reply@mg.onebox.mx', $this->config->item('company'));
 				$this->email->to($person_info->email);
 
 				$cc_mail = [];

@@ -123,7 +123,7 @@ $this->load->helper('update');
 				<li role="presentation"><a href="#work_order" data-toggle="pill"><?php echo lang("config_work_order"); ?></a></li>
 				
 				<?php 
-				if($this->config->item('branding')['code'] == 'phppointofsale'){
+				if($this->config->item('branding')['code'] == 'onebox'){
 				?>
 				<li role="presentation"><a href="#lookup_api_integration" data-toggle="pill"><?php echo lang("config_lookup_api_integration"); ?></a></li>
 				<?php
@@ -6948,7 +6948,7 @@ $this->load->helper('update');
 									if (!$this->config->item('shopify_public') || !$this->config->item('shopify_private'))
 									{
 									?>
-									<h3 style="text-align: center;"><?php echo 'E-mail <a href="mailto:support@phppointofsale.com">support@phppointofsale.com</a> to obtain these values'?></h3>
+									<h3 style="text-align: center;"><?php echo 'E-mail <a href="mailto:support@onebox.mx">support@onebox.mx</a> to obtain these values'?></h3>
 									
 									<div class="form-group" data-keyword="<?php echo H(lang('config_keyword_woocommerce')) ?>">	
 										<?php echo form_label(lang('shopify_public_key').':', 'shopify_public',array('class'=>'col-sm-3 col-md-3 col-lg-2 control-label')); ?>
@@ -7679,7 +7679,7 @@ $this->load->helper('update');
 
 				<!-- Lookup Api Integration -->
 				<?php 
-				if($this->config->item('branding')['code'] == 'phppointofsale'){
+				if($this->config->item('branding')['code'] == 'onebox'){
 				?>
 				<div class="tab-pane fade" id="lookup_api_integration">
 					<div class="row">

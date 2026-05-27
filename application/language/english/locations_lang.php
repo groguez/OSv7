@@ -108,19 +108,19 @@ $lang['locations_auto_reports_day'] = 'Day to email report for';
 $lang['locations_disable_confirmation_option_for_emv_credit_card'] = 'Disable Amount Confirmation when processing credit card';
 
 
-$lang['locations_blockchyp_api_key'] = 'PHP POS Payments API Key';
-$lang['locations_blockchyp_bearer_token'] = 'PHP POS Payments Bearer Token';
-$lang['locations_blockchyp_signing_key'] = 'PHP POS Payments Signing Key';
-$lang['locations_blockchyp_test_mode'] = 'PHP POS Payments Test Mode';
+$lang['locations_blockchyp_api_key'] = 'OneBox Payments API Key';
+$lang['locations_blockchyp_bearer_token'] = 'OneBox Payments Bearer Token';
+$lang['locations_blockchyp_signing_key'] = 'OneBox Payments Signing Key';
+$lang['locations_blockchyp_test_mode'] = 'OneBox Payments Test Mode';
 
 
 $lang['locations_send_sms_via_whatsapp'] = 'Send SMS via WhatsApp';
 
 
-$lang['locations_blockchyp_api_key'] = 'PHP POS Payments Premium API Key';
-$lang['locations_blockchyp_bearer_token'] = 'PHP POS Payments Premium Bearer Token';
-$lang['locations_blockchyp_signing_key'] = 'PHP POS Payments Premium Signing Key';
-$lang['locations_blockchyp_test_mode'] = 'PHP POS Payments Premium Test Mode';
+$lang['locations_blockchyp_api_key'] = 'OneBox Payments Premium API Key';
+$lang['locations_blockchyp_bearer_token'] = 'OneBox Payments Premium Bearer Token';
+$lang['locations_blockchyp_signing_key'] = 'OneBox Payments Premium Signing Key';
+$lang['locations_blockchyp_test_mode'] = 'OneBox Payments Premium Test Mode';
 
 $lang['locations_sidekick_api_key'] = 'Sidekick API Key';
 $lang['locations_sidekick_auto_review'] = 'Sidekick Automatically Ask For Reviews After Sale';
@@ -141,16 +141,16 @@ $lang['locations_blockchyp_ask_for_missing_info'] = 'Ask for missing information
 $lang['locations_square_location_id'] = 'Square Location ID';
 $lang['locations_connect_to_square'] = 'Connect To Square';
 $lang['locations_disconnect_to_square'] = 'Disconnect From Square';
-$lang['locations_coreclear_consumer_Key'] = 'PHP POS Payments Consumer Key (Backup Gateway)';
-$lang['locations_coreclear_secret_key'] = 'PHP POS Payments Secret Key (Backup Gateway)';
-$lang['locations_coreclear_authorization_key'] = 'PHP POS Payments Authorization Key (Backup Gateway)';
+$lang['locations_coreclear_consumer_Key'] = 'OneBox Payments Consumer Key (Backup Gateway)';
+$lang['locations_coreclear_secret_key'] = 'OneBox Payments Secret Key (Backup Gateway)';
+$lang['locations_coreclear_authorization_key'] = 'OneBox Payments Authorization Key (Backup Gateway)';
 $lang['locations_get_authorization_key'] = 'Get Authorization Key';
 $lang['locations_authorization_key_created'] = 'Authorization Key Created';
 $lang['locations_sandbox'] = 'Test Mode For Backup Gateway';
 $lang['locations_you_must_enter_a_valid_merchant_id'] = 'You must enter a valid merchant id';
 $lang['locations_you_must_enter_a_coreclear_consumer_key'] = 'You must enter a consumer key';
 $lang['locations_you_must_enter_a_coreclear_secret_key'] = 'You Must enter a secret key';
-$lang['locations_coreclear_mx_merchant_id'] = 'PHP POS Payments Merchant ID (Backup Gateway)';
+$lang['locations_coreclear_mx_merchant_id'] = 'OneBox Payments Merchant ID (Backup Gateway)';
 $lang['tax_cap_amount'] = 'Only Charge Tax On Amount (Tax Cap)';
 $lang['locations_registers_and_terminals'] = 'Registers & Terminals';
 $lang['locations_integrations'] = 'Integrations';
