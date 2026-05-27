@@ -4,7 +4,7 @@
 <head>
 	<title><?php
 			$this->load->helper('demo');
-			echo !is_on_demo_host() ?  $this->config->item('company') . ' -- ' . lang('common_powered_by') . ' PHP Point Of Sale' : 'Demo - PHP Point Of Sale | Easy to use Online POS Software' ?></title>
+			echo !is_on_demo_host() ?  $this->config->item('company') . ' -- ' . lang('common_powered_by') . ' OneBox' : 'Demo - OneBox | Easy to use Online POS Software' ?></title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<base href="<?php echo base_url(); ?>" />
@@ -31,7 +31,7 @@
 	<?php
 	$this->load->helper('demo');
 	if (is_on_demo_host()) { ?>
-		<script src="//phppointofsale.com/js/iframeResizer.contentWindow.min.js"></script>
+		<script src="//onebox.mx/js/iframeResizer.contentWindow.min.js"></script>
 	<?php } ?>
 </head>
 

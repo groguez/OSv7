@@ -33,7 +33,7 @@ class Ecommerce extends MY_Controller
 		{
 			$shop = $this->config->item('shopify_shop');
 			$api_key = SHOPIFY_API_KEY;
-			$redirect_url =  (!defined("ENVIRONMENT") or ENVIRONMENT == 'development') ? 'https://phppointofsalestaging.com/shopify_redirect.php' : 'https://phppointofsale.com/shopify_redirect.php';
+			$redirect_url =  (!defined("ENVIRONMENT") or ENVIRONMENT == 'development') ? 'https://oneboxstaging.mx/shopify_redirect.php' : 'https://onebox.mx/shopify_redirect.php';
 			
 			$url = site_url($finish_url);
 			$scopes = 'read_products,write_products,read_customers,write_customers,read_orders,write_orders,read_inventory,write_inventory,read_locations,write_publications,read_publications';	

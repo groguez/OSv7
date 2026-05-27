@@ -6,6 +6,6 @@ function is_on_demo_host()
 		return $_SERVER['CI_DEMO'];
 	}
 	
-	return isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'demo.phppointofsale.com' || $_SERVER['HTTP_HOST'] == 'demo.phppointofsalestaging.com' || $_SERVER['HTTP_HOST'] == 'demo.phppointofsale.lk' || $_SERVER['HTTP_HOST'] == 'demo.phppos.com');
+	return isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == 'demo.onebox.mx' || $_SERVER['HTTP_HOST'] == 'demo.oneboxstaging.mx' || $_SERVER['HTTP_HOST'] == 'demo.onebox.lk' || $_SERVER['HTTP_HOST'] == 'demo.onebox.com');
 }
 ?>

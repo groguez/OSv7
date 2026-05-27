@@ -398,7 +398,7 @@ $config['encryption_key'] = '';
 |
 */
 $config['sess_driver'] = 'database';
-$config['sess_cookie_name'] = 'phppos';
+$config['sess_cookie_name'] = 'onebox';
 $config['sess_samesite'] = 'Lax';
 $config['sess_expiration'] = 0;
 $config['sess_save_path'] = 'sessions';
@@ -562,28 +562,28 @@ $config['enable_profiling'] = isset($_SERVER['CI_PROFILING']) && $_SERVER['CI_PR
 
 
 $branding_config = array(
-	'phppointofsale' => 
+	'onebox' => 
 		array(
-			'name' => 'PHP Point Of Sale',
-			'short_name' => 'PHP POS',
-			'code' => 'phppointofsale',
-			'domain' => 'phppointofsale.com',
-			'staging_domain' => 'phppointofsalestaging.com',
-			'no_reply_email' => 'no-reply@mg.phppointofsale.com',
+			'name' => 'OneBox',
+			'short_name' => 'OneBox',
+			'code' => 'onebox',
+			'domain' => 'onebox.mx',
+			'staging_domain' => 'onebox.mx',
+			'no_reply_email' => 'no-reply@mg.onebox.mx',
 			'logo_path' => 'assets/img/header_logo.png',
 			'quickbooks_dev_client' => 'L005CLJaxaNGHbOXWfeTxxlnpLyYEtZnRE2Ap6Mg7PbDvJrJmg',
 			'quickbooks_dev_secret' => 'j3Glwe7bProoA4apidQV2KuC2UIabDWqRkY2o9v3',
 			'quickbooks_prod_client' => 'L0jFuF24v3zQMkY19hxFNT1G9j48iI16u5vHUHymUY7kbNqWtX',
 			'quickbooks_prod_secret' => 'TxiZlDwcByyE9J4Rxp0pxU7rVafbrQdPPgYAIIwU',			
 		),	
-		'phppointofsalelk' => 
+		'oneboxlk' => 
 			array(
-				'name' => 'PHP Point Of Sale Lanka',
-				'short_name' => 'PHP POS Lanka',
-				'code' => 'phppointofsale',
-				'domain' => 'phppointofsale.lk',
-				'staging_domain' => 'phppointofsalestaging.com',
-				'no_reply_email' => 'no-reply@mg.phppointofsale.com',
+				'name' => 'OneBox Lanka',
+				'short_name' => 'OneBox Lanka',
+				'code' => 'onebox',
+				'domain' => 'onebox.lk',
+				'staging_domain' => 'onebox.mx',
+				'no_reply_email' => 'no-reply@mg.onebox.mx',
 				'logo_path' => 'assets/img/header_logo_lanka.png',
 				'quickbooks_dev_client' => 'L005CLJaxaNGHbOXWfeTxxlnpLyYEtZnRE2Ap6Mg7PbDvJrJmg',
 				'quickbooks_dev_secret' => 'j3Glwe7bProoA4apidQV2KuC2UIabDWqRkY2o9v3',
@@ -596,17 +596,17 @@ if (isset($_SERVER['CI_BRANDING']))
 {
 	$brand = $_SERVER['CI_BRANDING'];
 }
-elseif(isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'],'phppointofsale.com') !== FALSE || strpos($_SERVER['HTTP_HOST'],'phppos.com') !== FALSE || strpos($_SERVER['HTTP_HOST'],'phppointofsalestaging.com') !== FALSE))
+elseif(isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'],'onebox.mx') !== FALSE || strpos($_SERVER['HTTP_HOST'],'onebox.com') !== FALSE || strpos($_SERVER['HTTP_HOST'],'oneboxstaging.mx') !== FALSE))
 {
-	$brand = 'phppointofsale';	
+	$brand = 'onebox';	
 }
-elseif(isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'],'phppointofsale.lk') !== FALSE))
+elseif(isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'],'onebox.lk') !== FALSE))
 {
-	$brand = 'phppointofsalelk';
+	$brand = 'oneboxlk';
 }
 else
 {
-	$brand = 'phppointofsale';	
+	$brand = 'onebox';	
 }
 
 $config['branding'] = $branding_config[$brand];

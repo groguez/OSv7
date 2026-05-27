@@ -1,12 +1,114 @@
-/************theme fonts********************/
-/***********************theme colors*****************************/
-/*****************theme parametres*******************/
-/*sidebar-parametres*/
-/************theme fonts********************/
-/***********************theme colors*****************************/
-.left-bar {
-  background-color: #373942;
+/***********************
+ * PHP Point of Sale - Dark Mode Theme
+ * Uses CSS Variables for consistency
+ ***********************/
+
+@import url('variables.css');
+
+/* Dark mode base overrides */
+.jumbotron,
+body,
+html {
+    background-color: var(--bg-dark);
+    color: var(--gray-400);
 }
+
+.summary-data p {
+    color: var(--white) !important;
+}
+
+.work_order_status_box,
+.workorder-badge {
+    background-color: var(--bg-dark) !important;
+}
+
+/* Text colors in dark mode */
+#item_kit_items th,
+.close,
+.dashboard-stats .left h4,
+.dropdown-menu > li > a,
+.item-suggestions .suggest-item .name,
+.list-group-item,
+.manage_buttons .buttons-list .dropdown-menu a,
+.modal .modal-content .modal-body,
+.modal .modal-title,
+.modal-item-info .modal-item-details .modal-item-category,
+.nav.nav-wizard > li > a,
+.navbar-breadcrumb > a,
+.opening_bal th,
+.pagination-top a,
+.piluku-tab-content > .tab-pane,
+.quick-actions a i,
+.register .register-items .register-items-holder .register-item-content .register-item-extra-details,
+.register .register-items .register-items-holder .register-item-content .register-item-extra-details a,
+.register .register-items .register-items-holder .register-item-content .register-item-extra-details dt,
+.select2-results .select2-no-results,
+.select2-results .select2-result-selectable .select2-result-label,
+.selectize-input > input,
+.table thead tr th,
+.table > tbody > tr > td,
+.table > thead > tr > td,
+h3,
+.table > tfoot > tr > th,
+.table > tbody > tr > th {
+    color: #abafb4 !important;
+}
+
+#myTabModalBody .btn-default:hover,
+.control-label,
+.customer-badge.suggestions .details .name,
+.popup_button:hover,
+p,
+#mercury_activate_container .mercury_description {
+    color: #7a88af !important;
+}
+
+.control-label,
+.invoice-address li,
+.invoice-address-custom li,
+.invoice-detail li,
+.invoice-detail li span,
+.invoice-footer .invoice-footer-heading,
+.invoice-footer .invoice-footer-value,
+.invoice-policy,
+.invoice-table .invoice-head,
+.invoice-table-content .category-heading,
+.invoice-table-content .invoice-content,
+.invoice-table-content .invoice-content .invoice-desc,
+.item-kits-heading,
+.register .register-summary .payments .value,
+.selectize-dropdown .active {
+    color: #919cbb !important;
+}
+
+/* Form controls in dark mode */
+.form-control,
+.register .register-items-form .item-form .input-group .add-item-input,
+.register .register-right .customer-form .input-group .add-customer-input,
+.register-items-form .item-form .input-group #item,
+.select2-container .select2-choice,
+.select2-container-multi .select2-choices,
+.select2-search input,
+.selectize-input,
+ul.token-input-list-facebook,
+ul.token-input-list-facebook li input {
+    font-size: 13px !important;
+    border: 1px solid var(--border-dark) !important;
+    color: #e4e4e4 !important;
+    background-color: var(--gray-700) !important;
+    background: var(--gray-700) !important;
+}
+
+/* Background colors in dark mode */
+#item_kit_form .form-group .input-group .input-group-btn .btn,
+#myTab,
+#sales_page_holder,
+.cal_cell_start_today,
+.col-config-dropdown .dropdown-header,
+.content,
+.invoice-table,
+.item-suggestions,
+.jsgrid-grid-header,
 .left-bar .menu-parent > li a {
   color: #969AA7;
 }

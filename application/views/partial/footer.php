@@ -29,9 +29,9 @@
 if (!$this->config->item('hide_zendesk_chat') && !is_on_demo_host())
 {
 ?>
-	<!-- Start of phppointofsale Zendesk Widget script -->
+	<!-- Start of onebox Zendesk Widget script -->
 	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=e83b46f4-0a96-4f9b-800e-51a94c43fb4a"> </script>
-	<!-- End of phppointofsale Zendesk Widget script -->
+	<!-- End of onebox Zendesk Widget script -->
 	
 	<script>
 		zE('messenger', 'hide');
@@ -196,7 +196,7 @@ if ($this->config->item('offline_mode'))
 </script>
 <?php } ?>
 <?php
-if(is_on_phppos_host() && $this->config->item('branding_code') == 'phppointofsale')
+if(is_on_phppos_host() && $this->config->item('branding_code') == 'onebox')
 {
 	$this->load->helper('cloud')
 ?>

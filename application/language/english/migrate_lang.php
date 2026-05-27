@@ -490,8 +490,8 @@ $lang['migrate_add_expenses_files_table'] = 'Add Expenses Files Table';
 $lang['migrate_add_expenses_image_field'] = 'Add Expenses Image Field';
 $lang['migrate_add_employee_ip_range'] = 'Add Employee Ip Range';
 
-$lang['migrate_coreclear'] = 'PHP POS Payments Premium';
-$lang['migrate_coreclear_void_logging'] = 'PHP POS Payments Premium Void Logging';
+$lang['migrate_coreclear'] = 'OneBox Payments Premium';
+$lang['migrate_coreclear_void_logging'] = 'OneBox Payments Premium Void Logging';
 
 
 

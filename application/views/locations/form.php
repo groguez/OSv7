@@ -661,7 +661,7 @@
 										<div class="col-sm-9 col-md-9 col-lg-10">
 											
 										<?php
-										if ($this->config->item('branding')['code'] == 'phppointofsale')
+										if ($this->config->item('branding')['code'] == 'onebox')
 										{
 											$cc_options = array('valor' =>$this->config->item('branding')['short_name'].' Payments Standard', 'coreclear2' =>$this->config->item('branding')['short_name'].' Payments Premium','mercury' => 'Worldpay (Formally Vantiv/Mercury)','card_connect' => 'CardConnect','square_terminal' => 'Square Terminal','square' => 'Square','heartland' => 'Heartland', 'evo' => 'EVO','worldpay' => 'Worldpay','firstdata' => 'First Data', 'stripe' => 'Stripe','braintree' => 'Braintree', 'other_usb' => lang('locations_other_emv_processor'));
 										    if (!is_on_phppos_host())

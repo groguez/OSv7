@@ -802,7 +802,7 @@ if (is_on_demo_host()) { ?>
 								<?php } ?>
 								
 								<li>
-									<a tabindex = "-1" id="change_log_link" target="_blank" href="https://feedback.phppointofsale.com"><i class="ion-chatbox"></i><span class="text"><?php echo lang('common_feedback_website'); ?></span></a>
+									<a tabindex = "-1" id="change_log_link" target="_blank" href="https://feedback.onebox.mx"><i class="ion-chatbox"></i><span class="text"><?php echo lang('common_feedback_website'); ?></span></a>
 								</li>								
 								<li>
 									

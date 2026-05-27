@@ -10,13 +10,16 @@ function get_css_files()
 	}
 	else
 	{
-		$branding = 'phppointofsale';
-		$code = 'phppointofsale';
+		$branding = 'onebox';
+		$code = 'onebox';
 	}
 
 	$return = array();
 	
+	// Modern base theme - loaded first for CSS variables and base styles
 	$css_files = array(
+		array('path' =>"assets/css_$code/variables.css"),
+		array('path' =>"assets/css_$code/base-modern.css"),
 		array('path' =>"assets/css_$code/bootstrap-3.min.css"),
 		array('path' =>"assets/css_$code/jquery-ui-1.10.4.custom.min.css"),
 		array('path' =>"assets/css_$code/themify-icons.css"),
@@ -45,7 +48,6 @@ function get_css_files()
 		array('path' =>"assets/css_$code/bootstrap-colorpicker.min.css"),
 		array('path' =>"assets/css_$code/signin2.css"),
 		array('path' =>"assets/css_$code/stacktable.css"),
-		array('path' =>"assets/css_$code/dark.css"),
 		array('path' =>"assets/css_$code/jqbtk.css"),
 		array('path' =>"assets/css_$code/jsgrid.css"),
 		array('path' =>"assets/css_$code/jsgrid-theme.css"),
@@ -73,7 +75,8 @@ function get_css_files()
 		
 		 if ($CI->config->item('dark_mode') || $CI->Employee->is_logged_in() && $CI->Employee->get_logged_in_employee_info()->dark_mode)
 		 {
-			$return[] = array('path' =>"assets/css_$code/theme-black.css");		 	
+			// Dark mode now uses the updated dark.css with CSS variables
+			$return[] = array('path' =>"assets/css_$code/dark.css");
 		 }
 		
 		if (function_exists('is_rtl_lang'))

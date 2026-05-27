@@ -35,7 +35,7 @@ class Languagecheck extends MY_Controller {
 		$this->load->helper('directory');
 
 		// for simplicity, we don't use views
-		$this->output('h1', 'PHP Point Of Sale - Language file checking and validation');
+		$this->output('h1', 'OneBox - Language file checking and validation');
 
 		// determine the language file path
 		if ( ! is_dir($this->lang_path) )

@@ -569,7 +569,7 @@ $.post('<?php echo site_url("items/clear_select_inventory");?>', {select_invento
 							<?php } ?>
 
 							<?php if (
-							$this->config->item('branding')['code'] == 'phppointofsale' &&
+							$this->config->item('branding')['code'] == 'onebox' &&
 							$this->config->item('ig_api_bearer_token') && $this->config->item('enable_ig_integration')) {?>
 							<li>
 								<?php echo anchor(
@@ -585,7 +585,7 @@ $.post('<?php echo site_url("items/clear_select_inventory");?>', {select_invento
 							</li>
 							<?php
 							}
-							if( $this->config->item('branding')['code'] == 'phppointofsale' &&
+							if( $this->config->item('branding')['code'] == 'onebox' &&
 							$this->config->item('wgp_integration_pkey') && $this->config->item('enable_wgp_integration')) {?>
 							<li>
 								<?php echo anchor(
@@ -601,7 +601,7 @@ $.post('<?php echo site_url("items/clear_select_inventory");?>', {select_invento
 							</li>
 							<?php } ?>
 							<?php if (
-							$this->config->item('branding')['code'] == 'phppointofsale' &&
+							$this->config->item('branding')['code'] == 'onebox' &&
 							$this->config->item('p4_api_bearer_token') && $this->config->item('enable_p4_integration')) {?>
 							<li>
 								<?php echo anchor(

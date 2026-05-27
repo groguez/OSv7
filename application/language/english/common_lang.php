@@ -1165,7 +1165,7 @@ $lang['common_ccv'] = 'CCV';
 
 
 
-$lang['common_coreclear_merchant_id'] = 'PHP POS Payments Merchant ID';
+$lang['common_coreclear_merchant_id'] = 'OneBox Payments Merchant ID';
 
 $lang['common_parties'] = 'Parties';
 $lang['common_add_receiving'] = 'Add Receiving';
