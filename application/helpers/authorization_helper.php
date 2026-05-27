@@ -116,14 +116,14 @@ function is_store_subscription_active($store_id = NULL)
     $CI =& get_instance();
     
     if (!$store_id) {
-        $store_id = $CI->config->item('default_location_id');
+        $store_id = $CI->Employee->get_logged_in_employee_current_location_id();
     }
     
     if (!$store_id) {
         return TRUE; // Si no hay tienda configurada, permitir acceso
     }
     
-    $store_info = $CI->Store->get_info($store_id);
+    $store_info = $CI->Location->get_info($store_id);
     
     if (!$store_info) {
         return TRUE;
@@ -170,10 +170,10 @@ function get_store_subscription_info($store_id = NULL)
     $CI =& get_instance();
     
     if (!$store_id) {
-        $store_id = $CI->config->item('default_location_id');
+        $store_id = $CI->Employee->get_logged_in_employee_current_location_id();
     }
     
-    $store_info = $CI->Store->get_info($store_id);
+    $store_info = $CI->Location->get_info($store_id);
     
     if (!$store_info) {
         return NULL;
