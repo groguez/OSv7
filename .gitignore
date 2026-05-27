@@ -21,29 +21,10 @@ composer.lock
 .vscode/
 .idea/
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Backup files
-*~
+# Database migrations backup
+*.sql
 *.bak
-*.backup
 
-# Coverage reports
-.coverage
-coverage/
-htmlcov/
-
-# PHP specific
-*.php~
-.htaccess
-
-# Session files
-sess_*
-
-# Cache directories
+# Cache
 .cache/
-tmp/
-temp/
 ```
