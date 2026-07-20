@@ -1,0 +1,121 @@
+/***********************
+ * PHP Point of Sale - Modern Theme Variables
+ * Centralized Design System
+ ***********************/
+
+:root {
+    /* Brand Colors */
+    --brand-primary: #489ee7;
+    --brand-primary-dark: #3a7bc8;
+    --brand-primary-light: #6fb0ed;
+    --brand-success: #6fd64b;
+    --brand-success-dark: #5ab83a;
+    --brand-danger: #fb5d5d;
+    --brand-danger-dark: #e04a4a;
+    --brand-warning: #f7941d;
+    --brand-warning-dark: #d87d12;
+    --brand-info: #9244CC;
+    --brand-info-dark: #7a38ad;
+    
+    /* Neutral Colors */
+    --white: #ffffff;
+    --gray-50: #f9fbfc;
+    --gray-100: #f2f4f7;
+    --gray-200: #e9ebee;
+    --gray-300: #d7dce5;
+    --gray-400: #969aa7;
+    --gray-500: #707780;
+    --gray-600: #4f555f;
+    --gray-700: #373942;
+    --gray-800: #202126;
+    --gray-900: #18191a;
+    --black: #000000;
+    
+    /* Text Colors */
+    --text-primary: #000000;
+    --text-secondary: #707780;
+    --text-muted: #969aa7;
+    --text-inverse: #ffffff;
+    
+    /* Background Colors */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fbfc;
+    --bg-tertiary: #f2f4f7;
+    --bg-dark: #18191a;
+    
+    /* Border Colors */
+    --border-light: #e9ebee;
+    --border-default: #d7dce5;
+    --border-dark: #3a3b3c;
+    
+    /* Module-specific Colors */
+    --module-customers: #6fd64b;
+    --module-items: #fb5d5d;
+    --module-price-rules: #9244CC;
+    --module-item-kits: #f7941d;
+    --module-suppliers: #489ee7;
+    --module-reports: #f7941d;
+    --module-receivings: #fb5d5d;
+    --module-sales: #6fd64b;
+    --module-deliveries: #9244CC;
+    --module-expenses: #489ee7;
+    --module-employees: #6fd64b;
+    --module-giftcards: #fb5d5d;
+    --module-config: #f7941d;
+    --module-locations: #9244CC;
+    --module-messages: #489ee7;
+    --module-timeclocks: #489ee7;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.2);
+    
+    /* Typography */
+    --font-family-base: 'Helvetica Neue', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-size-xs: 12px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.625;
+    --letter-spacing-normal: 0.25px;
+    
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 24px;
+    --spacing-3xl: 32px;
+    
+    /* Border Radius */
+    --radius-sm: 3px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    
+    /* Transitions */
+    --transition-fast: 150ms ease-out;
+    --transition-normal: 250ms ease-out;
+    --transition-slow: 350ms ease-out;
+    
+    /* Z-index layers */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-popover: 600;
+    --z-tooltip: 700;
+}

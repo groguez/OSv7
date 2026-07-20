@@ -1,0 +1,235 @@
+/***********************
+ * PHP Point of Sale - Dark Mode Theme
+ * Uses CSS Variables for consistency
+ ***********************/
+
+@import url('variables.css');
+
+/* Dark mode base overrides */
+.jumbotron,
+body,
+html {
+    background-color: var(--bg-dark);
+    color: var(--gray-400);
+}
+
+.summary-data p {
+    color: var(--white) !important;
+}
+
+.work_order_status_box,
+.workorder-badge {
+    background-color: var(--bg-dark) !important;
+}
+
+/* Text colors in dark mode */
+#item_kit_items th,
+.close,
+.dashboard-stats .left h4,
+.dropdown-menu > li > a,
+.item-suggestions .suggest-item .name,
+.list-group-item,
+.manage_buttons .buttons-list .dropdown-menu a,
+.modal .modal-content .modal-body,
+.modal .modal-title,
+.modal-item-info .modal-item-details .modal-item-category,
+.nav.nav-wizard > li > a,
+.navbar-breadcrumb > a,
+.opening_bal th,
+.pagination-top a,
+.piluku-tab-content > .tab-pane,
+.quick-actions a i,
+.register .register-items .register-items-holder .register-item-content .register-item-extra-details,
+.register .register-items .register-items-holder .register-item-content .register-item-extra-details a,
+.register .register-items .register-items-holder .register-item-content .register-item-extra-details dt,
+.select2-results .select2-no-results,
+.select2-results .select2-result-selectable .select2-result-label,
+.selectize-input > input,
+.table thead tr th,
+.table > tbody > tr > td,
+.table > thead > tr > td,
+h3,
+.table > tfoot > tr > th,
+.table > tbody > tr > th {
+    color: #abafb4 !important;
+}
+
+#myTabModalBody .btn-default:hover,
+.control-label,
+.customer-badge.suggestions .details .name,
+.popup_button:hover,
+p,
+#mercury_activate_container .mercury_description {
+    color: #7a88af !important;
+}
+
+.control-label,
+.invoice-address li,
+.invoice-address-custom li,
+.invoice-detail li,
+.invoice-detail li span,
+.invoice-footer .invoice-footer-heading,
+.invoice-footer .invoice-footer-value,
+.invoice-policy,
+.invoice-table .invoice-head,
+.invoice-table-content .category-heading,
+.invoice-table-content .invoice-content,
+.invoice-table-content .invoice-content .invoice-desc,
+.item-kits-heading,
+.register .register-summary .payments .value,
+.selectize-dropdown .active {
+    color: #919cbb !important;
+}
+
+/* Form controls in dark mode */
+.form-control,
+.register .register-items-form .item-form .input-group .add-item-input,
+.register .register-right .customer-form .input-group .add-customer-input,
+.register-items-form .item-form .input-group #item,
+.select2-container .select2-choice,
+.select2-container-multi .select2-choices,
+.select2-search input,
+.selectize-input,
+ul.token-input-list-facebook,
+ul.token-input-list-facebook li input {
+    font-size: 13px !important;
+    border: 1px solid var(--border-dark) !important;
+    color: #e4e4e4 !important;
+    background-color: var(--gray-700) !important;
+    background: var(--gray-700) !important;
+}
+
+/* Background colors in dark mode */
+#item_kit_form .form-group .input-group .input-group-btn .btn,
+#myTab,
+#sales_page_holder,
+.cal_cell_start_today,
+.col-config-dropdown .dropdown-header,
+.content,
+.invoice-table,
+.item-suggestions,
+.jsgrid-grid-header,
+.left-bar .menu-parent > li a {
+  color: #969AA7;
+}
+.left-bar .menu-parent > li a i {
+  color: #ADAFB9;
+}
+.left-bar .menu-parent > li:hover,
+.left-bar .menu-parent > li.active {
+  background-color: #202126;
+  border-left: 4px solid #489ee7;
+  -webkit-transition: all 0.1s ease-out;
+}
+.left-bar .menu-parent > li:hover.home,
+.left-bar .menu-parent > li.active.home {
+  border-left: 4px solid #489ee7;
+}
+.left-bar .menu-parent > li:hover.customers,
+.left-bar .menu-parent > li.active.customers {
+  border-left: 4px solid #6fd64b;
+}
+.left-bar .menu-parent > li:hover.items,
+.left-bar .menu-parent > li.active.items {
+  border-left: 4px solid #fb5d5d;
+}
+.left-bar .menu-parent > li:hover.price_rules,
+.left-bar .menu-parent > li.active.price_rules {
+  border-left: 4px solid #9244CC;
+}
+.left-bar .menu-parent > li:hover.item_kits,
+.left-bar .menu-parent > li.active.item_kits {
+  border-left: 4px solid #f7941d;
+}
+.left-bar .menu-parent > li:hover.suppliers,
+.left-bar .menu-parent > li.active.suppliers {
+  border-left: 4px solid #489ee7;
+}
+.left-bar .menu-parent > li:hover.reports,
+.left-bar .menu-parent > li.active.reports {
+  border-left: 4px solid #f7941d;
+}
+.left-bar .menu-parent > li:hover.receivings,
+.left-bar .menu-parent > li.active.receivings {
+  border-left: 4px solid #fb5d5d;
+}
+.left-bar .menu-parent > li:hover.sales,
+.left-bar .menu-parent > li.active.sales {
+  border-left: 4px solid #6fd64b;
+}
+.left-bar .menu-parent > li:hover.deliveries,
+.left-bar .menu-parent > li.active.deliveries {
+  border-left: 4px solid #9244CC;
+}
+.left-bar .menu-parent > li:hover.expenses,
+.left-bar .menu-parent > li.active.expenses {
+  border-left: 4px solid #489ee7;
+}
+.left-bar .menu-parent > li:hover.employees,
+.left-bar .menu-parent > li.active.employees {
+  border-left: 4px solid #6fd64b;
+}
+.left-bar .menu-parent > li:hover.giftcards,
+.left-bar .menu-parent > li.active.giftcards {
+  border-left: 4px solid #fb5d5d;
+}
+.left-bar .menu-parent > li:hover.config,
+.left-bar .menu-parent > li.active.config {
+  border-left: 4px solid #f7941d;
+}
+.left-bar .menu-parent > li:hover.locations,
+.left-bar .menu-parent > li.active.locations {
+  border-left: 4px solid #9244CC;
+}
+.left-bar .menu-parent > li:hover.messages,
+.left-bar .menu-parent > li.active.messages {
+  border-left: 4px solid #489ee7;
+}
+.left-bar .menu-parent > li:hover.timeclocks,
+.left-bar .menu-parent > li.active.timeclocks {
+  border-left: 4px solid #489ee7;
+}
+.left-bar .menu-parent > li:hover a,
+.left-bar .menu-parent > li.active a,
+.left-bar .menu-parent > li:hover i,
+.left-bar .menu-parent > li.active i {
+  color: white !important;
+}
+/*************************
+  Top Navbar colors  *****/
+.top-bar .navbar-default .navbar-nav > .open > a,
+.top-bar .navbar-default .navbar-nav > .open > a:focus,
+.top-bar .navbar-default .navbar-nav > .open > a:hover {
+  color: #255CB3;
+}
+.top-bar {
+  background-color: #489ee7;
+}
+.navbar-breadcrumb > a {
+  color: white !important;
+}
+.top-bar .navbar-default {
+  margin-left: -1px;
+  border-bottom-width: 0px;
+}
+.top-bar .navbar-default .navbar-right.navbar-nav > li > a {
+  background-color: transparent !important;
+  color: white;
+}
+.top-bar .top-elements .info-number.cart {
+  background-color: white;
+  color: #489ee7;
+}
+.left-bar .menu-parent > li,
+.side-bar .menu-parent > li {
+  display: block;
+  border-bottom: 1px solid #373942;
+}
+@media only screen and (max-width: 767px) {
+  .top-bar .navbar-nav {
+    background-color: #489ee7;
+  }
+}
+.menu-bar-mobile .ti-menu {
+  color: #fff;
+}
