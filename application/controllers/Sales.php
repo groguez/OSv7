@@ -1,4 +1,5 @@
 <?php
+require_once (APPPATH . 'core/Sales_Context_Engine.php');
 require_once ("Secure_area.php");
 require_once (APPPATH."models/cart/PHPPOSCartSale.php");
 require_once (APPPATH."traits/taxOverrideTrait.php");
@@ -13,10 +14,28 @@ class Sales extends Secure_area
 	
 	public $cart;
 	public $view_data = array();
+	protected $sales_context; // Instancia del Motor LEGO de Contexto de Ventas
 	
 	function __construct()
 	{
 		parent::__construct('sales');
+		
+		// --- INICIO: Inicialización del Motor de Contexto (LEGO Module) ---
+		// Se inicializa aquí para estar disponible en toda la sesión de venta.
+		// Funciona de forma aislada: si no existe, $this->sales_context será null y usamos defaults.
+		try {
+			$this->sales_context = new Sales_Context_Engine();
+			// Cargamos el contexto actual basado en la configuración de la tienda/usuario
+			$employee_info = $this->Employee->get_logged_in_employee_info();
+			if ($employee_info) {
+				$this->sales_context->load_context($employee_info->person_id);
+			}
+		} catch (Exception $e) {
+			log_message('error', 'Sales_Context_Engine no disponible: ' . $e->getMessage());
+			$this->sales_context = null;
+		}
+		// --- FIN: Inicialización del Motor ---
+		
 		$this->lang->load('sales');
 		$this->lang->load('module');
 		$this->load->helper('order');
@@ -58,6 +77,19 @@ class Sales extends Secure_area
 	    $this->load->model('Credit_card_charge_unconfirmed');
 		
 		$this->cart = PHPPOSCartSale::get_instance('sale');
+		
+		// Aplicar configuraciones dinámicas del contexto (LEGO Integration)
+		if ($this->sales_context) {
+			$config = $this->sales_context->get_active_config();
+			// Ejemplo: Sobrescribir etiquetas globales según industria
+			if (!empty($config['item_label'])) {
+				// Se inyecta en el lenguaje para que las vistas lo usen automáticamente
+				$this->lang->lines['items_item'] = $config['item_label'];
+			}
+			if (!empty($config['customer_label'])) {
+				$this->lang->lines['customers_customer'] = $config['customer_label'];
+			}
+		}
 		cache_item_and_item_kit_cart_info($this->cart->get_items());		
 	}	
 	
@@ -2284,6 +2316,32 @@ class Sales extends Secure_area
 		{
 			return;
 		}
+
+		// ==========================================
+		// INTEGRACIÓN LEGO: Validación del Contexto de Ventas
+		// El Sales_Context_Engine valida reglas específicas por industria
+		// antes de permitir completar la transacción
+		// ==========================================
+		if ($this->sales_context) {
+			$cart_data_for_validation = [
+				'customer_id' => $this->cart->customer_id,
+				'table_id' => $this->cart->get_delivery_info()['table_id'] ?? null,
+				'appointment_id' => $this->cart->get_delivery_info()['appointment_id'] ?? null,
+				'work_order_id' => $this->cart->get_delivery_info()['work_order_id'] ?? null,
+				'items' => $this->cart->get_items(),
+				'mode' => $this->cart->get_mode()
+			];
+			
+			$validation_result = $this->sales_context->validate_transaction($cart_data_for_validation);
+			
+			if (!$validation_result['valid']) {
+				$this->_reload(array('error' => implode('<br/>', $validation_result['errors'])), false);
+				return;
+			}
+		}
+		// ==========================================
+		// FIN INTEGRACIÓN LEGO
+		// ==========================================
 
 		if($this->cart->sale_id){
 			$sale_id = $this->cart->sale_id;
