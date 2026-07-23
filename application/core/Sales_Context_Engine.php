@@ -107,6 +107,47 @@ class Sales_Context_Engine {
         
         $this->store_id = $this->CI->config->item('location_id') ?: 1;
         $this->load_industry_config();
+        $this->active_features = $this->get_active_features();
+    }
+    
+    /**
+     * Carga el contexto específico para un empleado/tienda
+     * Método llamado desde Sales.php para inicialización dinámica
+     */
+    public function load_context($employee_id = null) {
+        // Recargar configuración si hay overrides por empleado
+        if ($employee_id) {
+            $employee_info = $this->CI->Employee_model->get_info($employee_id);
+            if ($employee_info && $employee_info->business_type_override) {
+                $this->industry_config = isset($this->industry_profiles[$employee_info->business_type_override]) 
+                    ? $this->industry_profiles[$employee_info->business_type_override]
+                    : $this->industry_config;
+            }
+        }
+        $this->active_features = $this->get_active_features();
+        return $this;
+    }
+    
+    /**
+     * Obtiene la configuración activa para ser usada en el controlador
+     * Retorna array compatible con las vistas y lógica de negocio
+     */
+    public function get_active_config() {
+        return [
+            'industry' => array_search($this->industry_config, $this->industry_profiles) ?: 'retail',
+            'item_label' => $this->industry_config['label_product'],
+            'customer_label' => $this->industry_config['label_customer'],
+            'transaction_label' => $this->industry_config['label_transaction'],
+            'ui_mode' => $this->industry_config['ui_mode'],
+            'features' => $this->active_features,
+            'required_fields' => $this->get_required_fields(),
+            'show_inventory' => $this->industry_config['show_inventory_levels'],
+            'show_expiration' => $this->industry_config['show_expiration_dates'],
+            'enable_tables' => $this->industry_config['enable_table_assignment'],
+            'enable_appointments' => $this->industry_config['enable_appointment_linking'],
+            'enable_signatures' => $this->industry_config['enable_signature_capture'],
+            'payment_flow' => $this->industry_config['default_payment_flow']
+        ];
     }
     
     /**
